@@ -9,6 +9,10 @@ module.exports = {
         "primary-light-color": "#5de2b4",
         "hero-hover": "#25e770",
       },
+      fontFamily: {
+        montserrat: ["Montserrat"],
+      },
+      safelist: ["animate-[fade-in-down_1s_ease-in-out]"],
     },
   },
   plugins: [],

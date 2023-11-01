@@ -1,8 +1,6 @@
 import React from "react";
 
-function Button(props) {
-  const { children, onClick, variant } = props;
-
+function Button({ children, onClick, variant }) {
   const getVariant = () => {
     if (variant === "secondary") {
       return "btn btn-secondary";

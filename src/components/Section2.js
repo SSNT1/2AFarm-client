@@ -20,21 +20,29 @@ function Section2({
 
   return (
     <div
-      className={`flex ${
-        type === "reverse" ? "justify-start" : "justify-end"
+      className={`flex justify-center ${
+        type === "reverse" ? "lg:justify-start" : "lg:justify-end"
       } ${getBackgroundImage()} bg-center bg-cover bg-no-repeat 
-      h-[800px] duration-500  ${wrapperClassName}`}
+       h-[420px] lg:h-[800px] duration-500  ${wrapperClassName}`}
       style={{
         backgroundImage: `${backgroundImage ? `url(${backgroundImage})` : ""}`,
       }}
     >
       <Content
         contentType={contentType}
-        wrapperClassName={`bg-white bg-opacity-70 backdrop-blur-sm w-1/3 
-        mx-[60px] min-h-full flex flex-col justify-center items-center`}
-        contentClassName="p-16 flex flex-col justify-center items-start"
+        wrapperClassName={`${
+          contentType === "secondary"
+            ? "bg-transparent backdrop-blur-[3px]"
+            : "bg-white backdrop-blur-sm"
+        } flex flex-col justify-center items-center
+        min-h-full
+        sm:w-2/4 lg:w-1/3 
+        sm:mx-[60px]
+        bg-opacity-5 sm:bg-opacity-70`}
+        contentClassName="p-10 lg:p-10 xl:p-16 flex flex-col justify-center items-start"
         title={title}
         description={description}
+        descriptionColor={"text-white md:text-black"}
         buttonText={buttonText}
       />
     </div>

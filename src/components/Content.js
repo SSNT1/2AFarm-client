@@ -10,29 +10,36 @@ function Content({
   contentClassName,
   buttonVariant,
   contentType,
+  descriptionColor,
 }) {
   return (
     <div className={`${wrapperClassName}`}>
       <div className={`${contentClassName} `}>
         <h2
-          className={`text-4xl  ${
-            contentType === "secondary" ? "text-white" : "text-primary-color"
-          }  font-bold mb-6 drop-shadow-sm`}
+          className={`text-xl lg:text-2xl xl:text-3xl  ${
+            contentType === "secondary"
+              ? "text-white drop-shadow"
+              : "text-primary-color"
+          }  font-bold mb-6`}
         >
           {title}
         </h2>
         <p
           className={`${
-            contentType === "secondary" ? "text-white" : "text-black"
-          }  text-base font-medium mb-6`}
+            contentType === "secondary"
+              ? "text-white drop-shadow"
+              : `${descriptionColor} md:text-black`
+          }  text-sm xl:text-base font-medium mb-6`}
         >
           {description}
         </p>
         {description2 && (
           <p
             className={`${
-              contentType === "secondary" ? "text-white" : "text-black"
-            }  text-base font-medium mb-6`}
+              contentType === "secondary"
+                ? "text-white"
+                : `${descriptionColor} md:text-black`
+            }  text-sm xl:text-base  font-medium mb-6`}
           >
             {description2}
           </p>

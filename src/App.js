@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import HeroComponent from "./components/HeroComponent";
 import Navbar from "./components/Navbar";
 import Section2 from "./components/Section2";
@@ -6,7 +7,7 @@ import SectionReverse from "./components/SectionReverse";
 
 function App() {
   return (
-    <div>
+    <div className="font-montserrat">
       <Navbar />
       <div className="h-[55px]" />
       <HeroComponent
@@ -18,7 +19,7 @@ function App() {
       />
 
       <Section2
-        wrapperClassName={"mt-32"}
+        wrapperClassName={"mt-20"}
         backgroundImage="https://images.pexels.com/photos/5998512/pexels-photo-5998512.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-5998512.jpg&fm=jpg"
         title="Cine suntem noi, 2A Farm? Afla acum!"
         description="You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:backdrop-opacity-60 to apply the backdrop-opacity-60 utility at only medium screen sizes and above."
@@ -26,7 +27,6 @@ function App() {
       />
 
       <SectionReverse
-        type="reverse"
         title="Acestea sunt produsele noastre favorite"
         description="În prezent am ajuns la peste 100 angajați și peste 4500 de produse în portofoliu, deservind peste 1000 clienți din aproape toată România."
         description2="Deținem un depozit modern de medicamente (autorizat de Agenția Națională a Medicamentului) și o importanta flotă de transport pentru medicamente (15-25 °C și  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asigurăm distribuția oricărui produs, în maxim 24h, către toți clienții 2AFarm."
@@ -34,7 +34,17 @@ function App() {
         sectionImage="https://c0.wallpaperflare.com/preview/261/782/412/tablets-drugs-pills-pharmacy.jpg"
       />
 
+      <Section2
+        type="reverse"
+        contentType="secondary"
+        backgroundImage="https://thehill.com/wp-content/uploads/sites/2/2019/10/ca_pharmacypillsfromshelf_102819getty.jpg?strip=1"
+        title="Cine suntem noi, 2A Farm? Afla acum!"
+        description="You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:backdrop-opacity-60 to apply the backdrop-opacity-60 utility at only medium screen sizes and above."
+        buttonText="TRY IT"
+      />
+
       <SectionReverse
+        type="reverse"
         title="Acestea sunt produsele noastre favorite"
         description="În prezent am ajuns la peste 100 angajați și peste 4500 de produse în portofoliu, deservind peste 1000 clienți din aproape toată România."
         description2="Deținem un depozit modern de medicamente (autorizat de Agenția Națională a Medicamentului) și o importanta flotă de transport pentru medicamente (15-25 °C și  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asigurăm distribuția oricărui produs, în maxim 24h, către toți clienții 2AFarm."
@@ -44,11 +54,14 @@ function App() {
 
       <HeroComponent
         height={250}
-        title="Ceva foarte frumos"
+        wrapperClassName={"mb-[20px]"}
+        title="Ceva frumos"
         buttonText="CUMPARA ACUM"
         buttonVariant="secondary"
-        backgroundImage="https://i.pinimg.com/originals/0c/14/d7/0c14d76df3209fab290e7cf5b22f7644.jpg"
+        backgroundImage="https://papers.co/wallpaper/papers.co-nd37-leaf-rain-green-nature-forest-29-wallpaper.jpg"
       />
+
+      <Footer />
     </div>
   );
 }
