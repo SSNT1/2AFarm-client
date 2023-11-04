@@ -1,6 +1,5 @@
 import React from "react";
-import ANPC1 from "../assets/anpc/ANPC-1.png";
-import ANPC2 from "../assets/anpc/ANPC-2.png";
+import { toAbsoluteUrl } from "../helpers/assetHelper";
 
 function Footer() {
   return (
@@ -62,7 +61,11 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={ANPC1} width={200} alt="anpc1" />
+            <img
+              src={toAbsoluteUrl("/assets/anpc/ANPC-1.png")}
+              width={200}
+              alt="anpc1"
+            />
           </a>
 
           <a
@@ -70,7 +73,12 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={ANPC2} width={200} alt="anpc2" className="mt-5" />
+            <img
+              src={toAbsoluteUrl("/assets/anpc/ANPC-2.png")}
+              width={200}
+              alt="anpc2"
+              className="mt-5"
+            />
           </a>
         </div>
       </div>

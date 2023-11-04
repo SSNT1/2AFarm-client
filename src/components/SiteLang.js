@@ -52,9 +52,11 @@ function SiteLang({
         <div className={` ${dropdownClassName}`}>
           {withoutSelectedLanguage.map((language) => {
             return (
-              <button onClick={() => handleSelectCountry(language)}>
+              <button
+                key={language.code}
+                onClick={() => handleSelectCountry(language)}
+              >
                 <img
-                  key={language.code}
                   src={language.country_flag}
                   alt="flag"
                   className={`w-9 h-9  px-[3px] py-[3px] hover:bg-primary-light-color rounded-full bg-center bg-cover bg-no-repeat ease-out duration-500} ${dropdownImageClassName}`}
