@@ -2,25 +2,28 @@ import React, { useState } from "react";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import SiteLang from "./SiteLang";
+import { useTranslation } from "react-i18next";
 
 const logo2A = "https://2afarm.ro/wp-content/uploads/2018/10/logo.svg";
 
 const navbarLinks = [
   {
-    name: "ACASĂ",
+    name: "navbar_link_1",
     href: "/",
   },
   {
-    name: "DESPRE NOI",
+    name: "navbar_link_2",
     href: "/",
   },
   {
-    name: "CONTACT",
+    name: "navbar_link_3",
     href: "/",
   },
 ];
 
 function Navbar() {
+  const { t: translate } = useTranslation();
+
   const [showNav, setShowNav] = useState(true);
 
   const handleShowNav = () => {
@@ -41,7 +44,7 @@ function Navbar() {
                 href={link.href}
                 className=" text-gray-400 px-3 py-5 mx-2 hover:text-primary-color ease-out duration-300"
               >
-                {link.name}
+                {translate(link.name)}
               </a>
             </li>
           );
@@ -53,7 +56,7 @@ function Navbar() {
           href="/s"
           className="bg-primary-color bg-opacity-20 text-secondary-color px-3 py-4"
         >
-          COMENZI
+          {translate("navbar_orders")}
         </a>
         <SiteLang
           wrapperClassName="px-2 py-2 h-auto hidden xl:flex "
@@ -96,7 +99,7 @@ function Navbar() {
                       href={link.href}
                       className=" text-gray-200  hover:text-primary-color ease-out duration-300"
                     >
-                      {link.name}
+                      {translate(link.name)}
                     </a>
                   </li>
                 );

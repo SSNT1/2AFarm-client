@@ -2,6 +2,8 @@ import "./App.css";
 import "swiper/css";
 import "swiper/css/bundle";
 
+import "./lang/i18n";
+
 import Footer from "./components/Footer";
 import HeroComponent from "./components/HeroComponent";
 import Navbar from "./components/Navbar";

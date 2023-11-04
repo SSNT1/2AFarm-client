@@ -1,38 +1,34 @@
-import React, { useState } from "react";
-
-const languages = [
-  {
-    code: "ro",
-    country_flag:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/255px-Flag_of_Romania.svg.png",
-  },
-  {
-    code: "en",
-    country_flag:
-      "https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg",
-  },
-  {
-    code: "it",
-    country_flag:
-      "https://www.worldometers.info/img/flags/small/tn_it-flag.gif",
-  },
-];
+import React, { useCallback, useState } from "react";
+import { languages } from "../lang/i18n";
+import { useTranslation } from "react-i18next";
 
 function SiteLang({
   wrapperClassName,
   dropdownClassName,
   dropdownImageClassName,
 }) {
-  const [showLang, setShowLang] = useState(false);
-  const [defaultLang, setDefaultLang] = useState(languages[0]);
+  const { i18n } = useTranslation();
 
-  const handleSelectCountry = (selectedCountry) => {
-    setShowLang(false);
-    setDefaultLang(selectedCountry);
-  };
+  const [showLang, setShowLang] = useState(false);
+
+  const handleSelectCountry = useCallback(
+    (selectedCountry) => {
+      i18n.changeLanguage(selectedCountry.code);
+      setShowLang(false);
+    },
+    [i18n]
+  );
+
+  const selectedLanguageFromStorage = languages.find(
+    (language) => language.code === i18n.language
+  );
+
+  if (!selectedLanguageFromStorage) {
+    return null;
+  }
 
   const withoutSelectedLanguage = languages.filter((languages) => {
-    return languages.country_flag !== defaultLang.country_flag;
+    return languages.country_flag !== selectedLanguageFromStorage.country_flag;
   });
 
   return (
@@ -42,7 +38,7 @@ function SiteLang({
         className={`cursor-pointer ${wrapperClassName}`}
       >
         <img
-          src={defaultLang.country_flag}
+          src={selectedLanguageFromStorage.country_flag}
           alt="flag"
           className="w-9 h-9 px-[3px] py-[3px] rounded-full bg-primary-color bg-opacity-50"
         />
