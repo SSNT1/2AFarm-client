@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import roFlag from "../assets/flags/ro.png";
-import enFlag from "../assets/flags/en.png";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import SiteLang from "./SiteLang";
@@ -57,10 +55,9 @@ function Navbar() {
         >
           COMENZI
         </a>
-
         <SiteLang
-          anchorClassName="px-3 py-3 h-auto hidden xl:flex"
-          dropdownClassName="bg-primary-color bg-opacity-80 hover:bg-primary-light-color px-3 py-4 absolute right-0 top-[54px] cursor-pointer ease-out duration-300"
+          wrapperClassName="px-2 py-2 h-auto hidden xl:flex "
+          dropdownClassName="flex flex-col bg-primary-color bg-opacity-80 px-2 py-2  absolute right-0 top-[54px] cursor-pointer ease-out duration-500"
         />
 
         <div>
@@ -86,8 +83,9 @@ function Navbar() {
             }
           >
             <SiteLang
-              anchorClassName="flex justify-end p-5 border-b border-gray-300"
-              dropdownClassName="p-5 absolute right-[50px] top-0"
+              wrapperClassName="flex justify-end p-5 border-b border-gray-300"
+              dropdownClassName="flex flex-row-reverse p-5 absolute right-[50px] top-0"
+              dropdownImageClassName="ml-2"
             />
 
             <ul className="flex flex-col">

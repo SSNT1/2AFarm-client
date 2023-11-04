@@ -1,41 +1,67 @@
 import React, { useState } from "react";
-import roFlag from "../assets/flags/ro.png";
-import enFlag from "../assets/flags/en.png";
 
-function SiteLang({ anchorClassName, dropdownClassName }) {
+const languages = [
+  {
+    code: "ro",
+    country_flag:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/255px-Flag_of_Romania.svg.png",
+  },
+  {
+    code: "en",
+    country_flag:
+      "https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg",
+  },
+  {
+    code: "it",
+    country_flag:
+      "https://www.worldometers.info/img/flags/small/tn_it-flag.gif",
+  },
+];
+
+function SiteLang({
+  wrapperClassName,
+  dropdownClassName,
+  dropdownImageClassName,
+}) {
   const [showLang, setShowLang] = useState(false);
-  const [activeLang, setActiveLang] = useState("ro");
+  const [defaultLang, setDefaultLang] = useState(languages[0]);
 
-  const handleShowLang = () => {
-    setShowLang(!showLang);
+  const handleSelectCountry = (selectedCountry) => {
+    setShowLang(false);
+    setDefaultLang(selectedCountry);
   };
 
-  const getSiteLang = () => {
-    if (activeLang === "en") {
-      return enFlag;
-    }
-    return roFlag;
-  };
+  const withoutSelectedLanguage = languages.filter((languages) => {
+    return languages.country_flag !== defaultLang.country_flag;
+  });
 
   return (
     <div>
-      <a href="#lang" onClick={handleShowLang} className={`${anchorClassName}`}>
+      <div
+        onClick={() => setShowLang((prev) => !prev)}
+        className={`cursor-pointer ${wrapperClassName}`}
+      >
         <img
-          src={getSiteLang()}
+          src={defaultLang.country_flag}
           alt="flag"
-          className="w-7 h-7 rounded-full cursor-pointer"
+          className="w-9 h-9 px-[3px] py-[3px] rounded-full bg-primary-color bg-opacity-50"
         />
-      </a>
+      </div>
+
       {showLang && (
-        <div
-          onClick={() => setActiveLang("en")}
-          className={`${dropdownClassName}`}
-        >
-          <img
-            src={`${activeLang === "ro" ? enFlag : roFlag}`}
-            alt="en"
-            className="w-7 h-7 rounded-full cursor-pointer"
-          />
+        <div className={` ${dropdownClassName}`}>
+          {withoutSelectedLanguage.map((language) => {
+            return (
+              <button onClick={() => handleSelectCountry(language)}>
+                <img
+                  key={language.code}
+                  src={language.country_flag}
+                  alt="flag"
+                  className={`w-9 h-9  px-[3px] py-[3px] hover:bg-primary-light-color rounded-full bg-center bg-cover bg-no-repeat ease-out duration-500} ${dropdownImageClassName}`}
+                />
+              </button>
+            );
+          })}
         </div>
       )}
     </div>
