@@ -1,22 +1,21 @@
 import "./App.css";
+import "swiper/css";
+import "swiper/css/bundle";
+
 import Footer from "./components/Footer";
 import HeroComponent from "./components/HeroComponent";
 import Navbar from "./components/Navbar";
 import Section2 from "./components/Section2";
 import SectionReverse from "./components/SectionReverse";
+import SliderComp from "./components/SliderComp";
+import Partners from "./components/Partners";
 
 function App() {
   return (
     <div className="font-montserrat">
       <Navbar />
       <div className="h-[55px]" />
-      <HeroComponent
-        height={800}
-        title="2A FARM S.R.L"
-        description="Aceasta este compania noastra "
-        buttonText="AFLĂ MAI MULTE"
-        backgroundImage="https://c0.wallpaperflare.com/path/896/663/732/adult-biology-chemical-chemist-7a2f2b5e6a080c94b1045e9d9ddcf101.jpg"
-      />
+      <SliderComp />
 
       <Section2
         wrapperClassName={"mt-20"}
@@ -54,12 +53,12 @@ function App() {
 
       <HeroComponent
         height={250}
-        wrapperClassName={"mb-[20px]"}
         title="Ceva frumos"
         buttonText="CUMPARA ACUM"
         buttonVariant="secondary"
         backgroundImage="https://papers.co/wallpaper/papers.co-nd37-leaf-rain-green-nature-forest-29-wallpaper.jpg"
       />
+      <Partners />
 
       <Footer />
     </div>

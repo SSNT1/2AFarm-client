@@ -51,20 +51,27 @@ function Partners() {
       <div className="max-w-7xl mx-auto py-[30px]">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={50}
-          // slidesPerView={4}
+          spaceBetween={0}
+          slidesPerView={1}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           effect="fade"
           loop={true}
           draggable
           breakpoints={{
-            // when window width is >= 640px
-            640: {
+            // when window width is >= 425px
+            425: {
               slidesPerView: 2,
+              spaceBetween: 20,
             },
             // when window width is >= 768px
-            1200: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            // when window width is >= 1024px
+            1024: {
               slidesPerView: 4,
+              spaceBetween: 50,
             },
           }}
         >
