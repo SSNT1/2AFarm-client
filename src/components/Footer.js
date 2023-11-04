@@ -4,20 +4,20 @@ import ANPC2 from "../assets/anpc/ANPC-2.png";
 
 function Footer() {
   return (
-    <div className="bg-primary-color">
+    <div className="bg-primary-color text-[.75em]">
       <div
         className="flex flex-col items-center justify-between px-[60px] py-[40px] 
       lg:flex-row"
       >
-        <div className="w-full lg:w-7/12 text-center lg:text-justify flex flex-col justify-between mb-10 lg:mb-0">
+        <div className="w-full lg:w-1/2 text-center lg:text-justify flex flex-col justify-between mb-10 lg:mb-0">
           <div
             className=" flex flex-col justify-center items-center mb-10
             lg:flex-row
             lg:items-start 
             lg:justify-between "
           >
-            <div className="flex flex-col text-white text-sm mb-5 lg:mb-0">
-              <h5 className="text-green-200 font-medium text-sm mb-[7px]">
+            <div className="flex flex-col text-white  mb-5 lg:mb-0">
+              <h5 className="text-green-200 font-medium  mb-[7px]">
                 Termeni Legali
               </h5>
               <p className="cursor-pointer hover:underline">
@@ -29,8 +29,8 @@ function Footer() {
               </p>
             </div>
 
-            <div className="flex flex-col text-white text-sm mb-5 lg:mb-0">
-              <h5 className="text-green-200 font-medium text-sm mb-[7px]">
+            <div className="flex flex-col text-white  mb-5 lg:mb-0">
+              <h5 className="text-green-200 font-medium  mb-[7px]">
                 Confidentialitate
               </h5>
               <p className="cursor-pointer hover:underline">
@@ -41,10 +41,8 @@ function Footer() {
               </p>
             </div>
 
-            <div className="flex flex-col text-white text-sm ">
-              <h5 className="text-green-200 font-medium text-sm mb-[7px]">
-                2A Farm
-              </h5>
+            <div className="flex flex-col text-white">
+              <h5 className="text-green-200 font-medium mb-[7px]">2A Farm</h5>
               <p className="cursor-pointer hover:underline">
                 Vanzari Medicamente
               </p>
@@ -53,7 +51,7 @@ function Footer() {
             </div>
           </div>
 
-          <h5 className="text-green-200 font-medium text-sm">
+          <h5 className="text-green-200 font-medium">
             © 2023 2A Farm Distribution
           </h5>
         </div>
