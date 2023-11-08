@@ -2,6 +2,7 @@ import React from "react";
 import { toAbsoluteUrl } from "../helpers/assetHelper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 const partnersList = [
   {
@@ -43,11 +44,13 @@ const partnersList = [
 ];
 
 function Partners() {
+  const { t: translate } = useTranslation();
+
   return (
-    <div className=" max-w-full p-[20px] md:p-[40px] lg:py-[60px] ">
-      <h1 className="text-primary-color text-center text-xl lg:text-2xl xl:text-3xl font-bold">
-        Partenerii nostri
-      </h1>
+    <div className="border-y-2 my-2 border-primary-color max-w-full p-[20px] md:p-[40px] lg:py-[60px] ">
+      <h2 className="text-primary-color text-center text-xl lg:text-2xl xl:text-3xl font-bold">
+        {translate("partners_title")}
+      </h2>
       <div className="max-w-7xl mx-auto py-[30px]">
         <Swiper
           modules={[Autoplay]}
