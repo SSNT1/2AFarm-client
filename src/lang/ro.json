@@ -2,7 +2,58 @@
     "navbar_link_1": "ACASA",
     "navbar_link_2": "DESPRE NOI",
     "navbar_link_3": "CONTACT",
+    "navbar_orders": "COMENZI",
 
-    "navbar_orders": "COMENZI"
+    "hero_title_1": "2A FARM S.R.L",
+    "hero_description_1": "Suntem 2A Farm S.R.L. o companie tanara, cu capital 100% romanesc, infiintata si autorizata ANM-DM in anul 2011 si avand activitate principala distributia de medicamente catre farmaciile independente din intreaga tara.",
+    "hero_button_1": "2A FARM S.R.L",
+
+    "hero_title_2": "Tot ce trebuie sa stii despre noi",
+    "hero_description_2": "In ceea ce priveste performanta financiara, va putem spune ca in anul 2019 am dezvoltat o cifra de afaceri de peste 116 mil. lei.",
+    "hero_button_2": "",
+
+    "hero_title_3": "2A Farm Romania",
+    "hero_description_3": "Descopera lumea 2A Farm si bucura-te de produsele noastre! ",
+    "hero_button_3": "DESCOPERA",
+
+    "hero_title_down_section": "Produsele 2A Farm",
+    "hero_description_down_section": "",
+    "hero_button_down_section": "CUMPARA ACUM",
+
+    "full_bg_component_title_1": "Cine suntem noi, 2A Farm? Afla acum!",
+    "full_bg_component_description_1":"Detinem un depozit modern de medicamente (autorizat de Agentia Nationala a Medicamentului) si o importanta flota de transport pentru medicamente (15-25 °C si  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asiguram distributia oricarui produs, in maxim 24h, catre toti clientii 2AFarm.",
+    "full_bg_component_button_1": "INCEARCA ACUM",
+
+    "full_bg_component_title_2": "Cine suntem noi, 2A Farm? Afla acum!",
+    "full_bg_component_description_2": "Detinem un depozit modern de medicamente (autorizat de Agentia Nationala a Medicamentului) si o importanta flota de transport pentru medicamente (15-25 °C si  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asiguram distributia oricarui produs, in maxim 24h, catre toti clientii 2AFarm.", 
+    "full_bg_component_button_2": "PRODUSELE NOASTRE",
+
+    "image_and_content_component_title_1": "Acestea sunt produsele noastre favorite",
+    "image_and_content_component_description_1":"In prezent am ajuns la peste 100 angajati si peste 4500 de produse in portofoliu, deservind peste 1000 clienti din aproape toata Romania.",
+    "image_and_content_component_description2_1":"Detinem un depozit modern de medicamente (autorizat de Agentia Nationala a Medicamentului) si o importanta flota de transport pentru medicamente (15-25 °C si  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asiguram distributia oricarui produs, in maxim 24h, catre toti clientii 2AFarm.",
+    "image_and_content_component_button_1": "INCEPE ACUM",
+
+    "image_and_content_component_title_2": "Acestea sunt produsele noastre favorite",
+    "image_and_content_component_description_2":"In prezent am ajuns la peste 100 angajati si peste 4500 de produse in portofoliu, deservind peste 1000 clienti din aproape toata Romania.",
+    "image_and_content_component_description2_2":"Detinem un depozit modern de medicamente (autorizat de Agentia Nationala a Medicamentului) si o importanta flota de transport pentru medicamente (15-25 °C si  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asiguram distributia oricarui produs, in maxim 24h, catre toti clientii 2AFarm.",
+    "image_and_content_component_button_2": "INCEPE ACUM",
+
+    "partners_title" : "Partenerii nostri",
+
+    "producers_title" : "Producatori",
+
+    "footer_section_1_title" :"Termeni Legali",
+    "footer_section_1_subtitle_1" : "Termeni si Conditii",
+    "footer_section_1_subtitle_2" : "Regulament",
+    "footer_section_1_subtitle_3" : "Protectia Consumatorului",
+
+    "footer_section_2_title" :"Confidentialitate",
+    "footer_section_2_subtitle_1" : "Politica de confidentialitate",
+    "footer_section_2_subtitle_2" : "Politica privind fisierele cookie",
+
+    "footer_section_3_title" :"2A Farm",
+    "footer_section_3_subtitle_1" : "Vanzari Medicamente",
+    "footer_section_3_subtitle_2" : "Parteneri",
+    "footer_section_3_subtitle_3" : "Contacteaza-ne"
 }
   

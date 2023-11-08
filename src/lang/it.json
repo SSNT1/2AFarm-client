@@ -1,6 +1,59 @@
 {
-    "navbar_link_1": "ACASA",
-    "navbar_link_2": "DESPRE NOI",
-    "navbar_link_3": "CONTACT"
+    "navbar_link_1": "CASA",
+    "navbar_link_2": "CHI SIAMO",
+    "navbar_link_3": "CONTACT",
+    "navbar_orders": "ORDINI",
+
+    "hero_title_1": "2A FARM S.R.L",
+    "hero_description_1": "Siamo 2A Farm S.R.L., una giovane azienda con capitale interamente rumeno, fondata e autorizzata da ANM-DM nel 2011. La nostra attività principale è la distribuzione di medicinali alle farmacie indipendenti in tutto il paese.",
+    "hero_button_1": "2A FARM S.R.L",
+
+    "hero_title_2": "Tutto ciò che devi sapere su di noi",
+    "hero_description_2": "Per quanto riguarda le performance finanziarie, possiamo dirvi che nel 2019 abbiamo raggiunto un fatturato di oltre 116 milioni di lei.",
+    "hero_button_2": "",
+
+    "hero_title_3": "2A Farm Romania",
+    "hero_description_3": "Scopri il mondo di 2A Farm e goditi i nostri prodotti!",
+    "hero_button_3": "SCOPRI",
+
+    "hero_title_down_section": "Prodotti 2A Farm",
+    "hero_description_down_section": "",
+    "hero_button_down_section": "COMPRA ORA",
+
+    "full_bg_component_title_1": "Chi siamo, 2A Farm? Scoprilo ora!",
+    "full_bg_component_description_1":"Gestiamo un moderno deposito farmaceutico (autorizzato dall'Agenzia Nazionale del Farmaco) e una flotta di trasporto specializzata per i medicinali (15-25 °C e 2-8 °C, secondo le nuove linee guida GDP). Attraverso la nostra logistica innovativa, garantiamo la distribuzione di qualsiasi prodotto a tutti i clienti di 2A Farm entro 24 ore.",
+    "full_bg_component_button_1": "PROVA ORA!",
+
+    "full_bg_component_title_2": "Chi siamo, 2A Farm? Scoprilo ora!",
+    "full_bg_component_description_2": "Gestiamo un moderno deposito farmaceutico (autorizzato dall'Agenzia Nazionale del Farmaco) e una flotta di trasporto specializzata per i medicinali (15-25 °C e 2-8 °C, secondo le nuove linee guida GDP). Attraverso la nostra logistica innovativa, garantiamo la distribuzione di qualsiasi prodotto a tutti i clienti di 2A Farm entro 24 ore.", 
+    "full_bg_component_button_2": "I NOSTRI PRODOTTI",
+
+    "image_and_content_component_title_1": "Questi sono i nostri prodotti preferiti",
+    "image_and_content_component_description_1":"Attualmente, abbiamo oltre 100 dipendenti e più di 4500 prodotti nel nostro portafoglio, servendo oltre 1000 clienti provenienti da quasi tutta la Romania.",
+    "image_and_content_component_description2_1":"Gestiamo un moderno deposito farmaceutico (autorizzato dall'Agenzia Nazionale del Farmaco) e una flotta di trasporto specializzata per i medicinali (15-25 °C e 2-8 °C, secondo le nuove linee guida GDP). Attraverso la nostra logistica innovativa, garantiamo la distribuzione di qualsiasi prodotto a tutti i clienti di 2A Farm entro 24 ore.",
+    "image_and_content_component_button_1": "INIZIA ORA",
+
+    "image_and_content_component_title_2": "Questi sono i nostri prodotti preferiti",
+    "image_and_content_component_description_2":"Attualmente, abbiamo oltre 100 dipendenti e più di 4500 prodotti nel nostro portafoglio, servendo oltre 1000 clienti provenienti da quasi tutta la Romania.",
+    "image_and_content_component_description2_2":"Gestiamo un moderno deposito farmaceutico (autorizzato dall'Agenzia Nazionale del Farmaco) e una flotta di trasporto specializzata per i medicinali (15-25 °C e 2-8 °C, secondo le nuove linee guida GDP). Attraverso la nostra logistica innovativa, garantiamo la distribuzione di qualsiasi prodotto a tutti i clienti di 2A Farm entro 24 ore.",
+    "image_and_content_component_button_2": "INIZIA ORA",
+
+    "partners_title" : "I nostri partner",
+
+    "producers_title" : "Produttori",
+
+    "footer_section_1_title" :"Termini legali",
+    "footer_section_1_subtitle_1" : "Termini e condizioni",
+    "footer_section_1_subtitle_2" : "Regolamento",
+    "footer_section_1_subtitle_3" : "Protezione del consumatore",
+
+    "footer_section_2_title" :"Confidenzialità",
+    "footer_section_2_subtitle_1" : "Informativa sulla privacy",
+    "footer_section_2_subtitle_2" : "Informativa sui cookie",
+
+    "footer_section_3_title" :"2A Farm",
+    "footer_section_3_subtitle_1" : "Vendita di farmaci",
+    "footer_section_3_subtitle_2" : "Partner",
+    "footer_section_3_subtitle_3" : "Contattaci"
 }
   

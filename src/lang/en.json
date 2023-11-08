@@ -2,7 +2,59 @@
     "navbar_link_1": "HOME",
     "navbar_link_2": "ABOUT US",
     "navbar_link_3": "CONTACT",
+    "navbar_orders": "ORDERS",
 
-    "navbar_orders": "COMENZI"
+
+    "hero_title_1": "2A FARM S.R.L",
+    "hero_description_1": "We are 2A Farm S.R.L., a young company with 100% Romanian capital, established and authorized by ANM-DM in 2011. Our main activity is the distribution of medicines to independent pharmacies nationwide.",
+    "hero_button_1": "2A FARM S.R.L",
+
+    "hero_title_2": "Everything you have to know about us",
+    "hero_description_2": "As for financial performance, we can tell you that in 2019 we achieved a turnover of over 116 million lei.",
+    "hero_button_2": "",
+
+    "hero_title_3": "2A Farm Romania",
+    "hero_description_3": "Discover the world of 2A Farm and enjoy our products!",
+    "hero_button_3": "DISCOVER",
+
+    "hero_title_down_section": "2A Farm Products",
+    "hero_description_down_section": "",
+    "hero_button_down_section": "BUY NOW",
+
+    "full_bg_component_title_1": "Who are we, 2A Farm? Find out now!",
+    "full_bg_component_description_1":"We operate a state-of-the-art pharmaceutical warehouse (authorized by the National Agency for Medicines) and a significant fleet of temperature-controlled transportation for medicines (15-25 °C and 2-8 °C, according to the new GDP guidelines). Through our innovative logistics, we ensure the distribution of any product to all 2A Farm customers within 24 hours.",
+    "full_bg_component_button_1": "TRY IT NOW!",
+
+    "full_bg_component_title_2": "Who are we, 2A Farm? Find out now!",
+    "full_bg_component_description_2": "We operate a state-of-the-art pharmaceutical warehouse (authorized by the National Agency for Medicines) and a significant fleet of temperature-controlled transportation for medicines (15-25 °C and 2-8 °C, according to the new GDP guidelines). Through our innovative logistics, we ensure the distribution of any product to all 2A Farm customers within 24 hours.", 
+    "full_bg_component_button_2": "OUR PRODUCTS",
+
+    "image_and_content_component_title_1": "These are our favorite products",
+    "image_and_content_component_description_1":"Currently, we have over 100 employees and more than 4500 products in our portfolio, serving over 1000 clients from almost all over Romania.",
+    "image_and_content_component_description2_1":"We operate a state-of-the-art pharmaceutical warehouse (authorized by the National Agency for Medicines) and a significant fleet of temperature-controlled transportation for medicines (15-25 °C and 2-8 °C, according to the new GDP guidelines). Through our innovative logistics, we ensure the distribution of any product to all 2A Farm customers within 24 hours.",
+    "image_and_content_component_button_1": "START NOW",
+
+    "image_and_content_component_title_2": "These are our favorite products",
+    "image_and_content_component_description_2":"Currently, we have over 100 employees and more than 4500 products in our portfolio, serving over 1000 clients from almost all over Romania.",
+    "image_and_content_component_description2_2":"We operate a state-of-the-art pharmaceutical warehouse (authorized by the National Agency for Medicines) and a significant fleet of temperature-controlled transportation for medicines (15-25 °C and 2-8 °C, according to the new GDP guidelines). Through our innovative logistics, we ensure the distribution of any product to all 2A Farm customers within 24 hours.",
+    "image_and_content_component_button_2": "START NOW",
+
+    "partners_title" : "Our Partners",
+
+    "producers_title" : "Producers",
+
+    "footer_section_1_title" :"Legal Terms",
+    "footer_section_1_subtitle_1" : "Terms and Conditions",
+    "footer_section_1_subtitle_2" : "Regulations",
+    "footer_section_1_subtitle_3" : "Consumer Protection",
+
+    "footer_section_2_title" :"Confidentiality",
+    "footer_section_2_subtitle_1" : "Privacy Policy",
+    "footer_section_2_subtitle_2" : "Cookie Policy",
+
+    "footer_section_3_title" :"2A Farm",
+    "footer_section_3_subtitle_1" : "Pharmaceutical Sales",
+    "footer_section_3_subtitle_2" : "Partners",
+    "footer_section_3_subtitle_3" : "Contact Us"
 }
   
