@@ -9,6 +9,7 @@ function FullBgWithContentComponent({
   buttonText,
   wrapperClassName,
   contentType,
+  contentBackground,
 }) {
   const getBackgroundImage = () => {
     if (backgroundImage) {
@@ -16,6 +17,13 @@ function FullBgWithContentComponent({
     }
 
     return "bg-gradient-to-r from-cyan-500 to-blue-500";
+  };
+
+  const getContentBackground = () => {
+    if (contentBackground) {
+      return contentBackground;
+    }
+    return "bg-white backdrop-blur-sm";
   };
 
   return (
@@ -30,11 +38,7 @@ function FullBgWithContentComponent({
     >
       <Content
         contentType={contentType}
-        wrapperClassName={`${
-          contentType === "secondary"
-            ? "bg-transparent backdrop-blur-[3px]"
-            : "bg-white backdrop-blur-sm"
-        } flex flex-col justify-center items-center
+        wrapperClassName={`${getContentBackground()} flex flex-col justify-center items-center
         min-h-full
         sm:w-2/4 lg:w-1/3 
         sm:mx-[60px]

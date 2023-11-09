@@ -88,6 +88,7 @@ function App() {
       />
 
       <FullBgWithContentComponent
+        contentBackground={"bg-transparent backdrop-blur-[3px]"}
         type="reverse"
         contentType="secondary"
         backgroundImage="https://thehill.com/wp-content/uploads/sites/2/2019/10/ca_pharmacypillsfromshelf_102819getty.jpg?strip=1"
