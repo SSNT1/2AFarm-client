@@ -20,7 +20,7 @@ function HeroComponent({
 
   return (
     <div
-      className={`${getBackgroundColor()} bg-center bg-cover bg-no-repeat duration-500
+      className={`${getBackgroundColor()} cursor-default bg-center bg-cover bg-no-repeat duration-500
       bg-gradient-to-tr from-gray-600 to-gray-600 w-full m-auto
       flex justify-center items-center 
       z-10 relative
@@ -43,11 +43,11 @@ function HeroComponent({
       <div
         className={`flex flex-col justify-center items-center text-white p-10 ${contentClassName}`}
       >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl drop-shadow mb-5 font-bold text-center">
+        <h1 className="max-w-7xl mx-auto text-4xl md:text-5xl lg:text-6xl drop-shadow mb-5 font-bold text-center">
           {title}
         </h1>
         {description && (
-          <p className="text-center text-sm lg:text-base drop-shadow font-medium mb-10 px-16">
+          <p className="max-w-2xl mx-auto text-center text-sm lg:text-base drop-shadow font-medium mb-10 px-16">
             {description}
           </p>
         )}
