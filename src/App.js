@@ -7,60 +7,111 @@ import "./lang/i18n";
 import Footer from "./components/Footer";
 import HeroComponent from "./components/HeroComponent";
 import Navbar from "./components/Navbar";
-import Section2 from "./components/Section2";
-import SectionReverse from "./components/SectionReverse";
-import SliderComp from "./components/SliderComp";
 import Partners from "./components/Partners";
+import { useTranslation } from "react-i18next";
+import FullBgWithContentComponent from "./components/FullBgWithContentComponent";
+import ImageAndContentComponent from "./components/ImageAndContentComponent";
+import SliderComponent from "./components/SliderComponent";
+import Producers from "./components/Producers";
 
 function App() {
+  const { t: translate } = useTranslation();
+
   return (
     <div className="font-montserrat">
-      <Navbar />
+      <Navbar
+        ordersButtonText={translate("navbar_orders")}
+        navbarLinks={[
+          {
+            name: translate("navbar_link_1"),
+            href: "/",
+          },
+          {
+            name: translate("navbar_link_2"),
+            href: "/",
+          },
+          {
+            name: translate("navbar_link_3"),
+            href: "/",
+          },
+        ]}
+      />
       <div className="h-[55px]" />
-      <SliderComp />
-
-      <Section2
-        wrapperClassName={"mt-20"}
-        backgroundImage="https://images.pexels.com/photos/5998512/pexels-photo-5998512.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-5998512.jpg&fm=jpg"
-        title="Cine suntem noi, 2A Farm? Afla acum!"
-        description="You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:backdrop-opacity-60 to apply the backdrop-opacity-60 utility at only medium screen sizes and above."
-        buttonText="INCEARA SI TU"
+      <SliderComponent
+        sliderData={[
+          {
+            height: 800,
+            title: translate("hero_title_1"),
+            description: translate("hero_description_1"),
+            buttonText: translate("hero_button_1"),
+            backgroundImage:
+              "https://tt152.files.keap.app/tt152/2799b797-d1db-4128-bbc8-af43290f881c",
+          },
+          {
+            height: 800,
+            title: translate("hero_title_2"),
+            description: translate("hero_description_2"),
+            buttonText: translate("hero_button_2"),
+            backgroundImage:
+              "https://c0.wallpaperflare.com/path/896/663/732/adult-biology-chemical-chemist-7a2f2b5e6a080c94b1045e9d9ddcf101.jpg",
+          },
+          {
+            height: 800,
+            title: translate("hero_title_3"),
+            description: translate("hero_description_3"),
+            buttonText: translate("hero_button_3"),
+            backgroundImage:
+              "https://wp.inews.co.uk/wp-content/uploads/2023/01/SEI_139961276.jpg",
+          },
+        ]}
       />
 
-      <SectionReverse
-        title="Acestea sunt produsele noastre favorite"
-        description="În prezent am ajuns la peste 100 angajați și peste 4500 de produse în portofoliu, deservind peste 1000 clienți din aproape toată România."
-        description2="Deținem un depozit modern de medicamente (autorizat de Agenția Națională a Medicamentului) și o importanta flotă de transport pentru medicamente (15-25 °C și  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asigurăm distribuția oricărui produs, în maxim 24h, către toți clienții 2AFarm."
-        buttonText="INCEPE ACUM"
+      <FullBgWithContentComponent
+        wrapperClassName={"mt-20"}
+        backgroundImage="https://images.pexels.com/photos/5998512/pexels-photo-5998512.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-5998512.jpg&fm=jpg"
+        title={translate("full_bg_component_title_1")}
+        description={translate("full_bg_component_description_1")}
+        buttonText={translate("full_bg_component_button_1")}
+      />
+
+      <ImageAndContentComponent
+        title={translate("image_and_content_component_title_1")}
+        description={translate("image_and_content_component_description_1")}
+        description2={translate("image_and_content_component_description2_1")}
+        buttonText={translate("image_and_content_component_button_1")}
         sectionImage="https://c0.wallpaperflare.com/preview/261/782/412/tablets-drugs-pills-pharmacy.jpg"
       />
 
-      <Section2
+      <FullBgWithContentComponent
         type="reverse"
         contentType="secondary"
         backgroundImage="https://thehill.com/wp-content/uploads/sites/2/2019/10/ca_pharmacypillsfromshelf_102819getty.jpg?strip=1"
-        title="Cine suntem noi, 2A Farm? Afla acum!"
-        description="You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:backdrop-opacity-60 to apply the backdrop-opacity-60 utility at only medium screen sizes and above."
-        buttonText="TRY IT"
+        title={translate("full_bg_component_title_2")}
+        description={translate("full_bg_component_description_2")}
+        buttonText={translate("full_bg_component_button_2")}
       />
 
-      <SectionReverse
+      <ImageAndContentComponent
         type="reverse"
-        title="Acestea sunt produsele noastre favorite"
-        description="În prezent am ajuns la peste 100 angajați și peste 4500 de produse în portofoliu, deservind peste 1000 clienți din aproape toată România."
-        description2="Deținem un depozit modern de medicamente (autorizat de Agenția Națională a Medicamentului) și o importanta flotă de transport pentru medicamente (15-25 °C și  2-8 °C, conform noului GDP). Prin logistica inovatoare proprie, asigurăm distribuția oricărui produs, în maxim 24h, către toți clienții 2AFarm."
-        buttonText="INCEPE ACUM"
+        title={translate("image_and_content_component_title_2")}
+        description={translate("image_and_content_component_description_2")}
+        description2={translate("image_and_content_component_description2_2")}
+        buttonText={translate("image_and_content_component_button_2")}
         sectionImage="https://images.unsplash.com/photo-1642055514517-7b52288890ec?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
+      <Partners />
+
       <HeroComponent
         height={250}
-        title="Ceva frumos"
-        buttonText="CUMPARA ACUM"
+        title={translate("hero_title_down_section")}
+        description={translate("hero_description_down_section")}
+        buttonText={translate("hero_button_down_section")}
         buttonVariant="secondary"
         backgroundImage="https://papers.co/wallpaper/papers.co-nd37-leaf-rain-green-nature-forest-29-wallpaper.jpg"
       />
-      <Partners />
+
+      <Producers />
 
       <Footer />
     </div>

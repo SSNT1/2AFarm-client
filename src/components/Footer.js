@@ -1,7 +1,10 @@
 import React from "react";
 import { toAbsoluteUrl } from "../helpers/assetHelper";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t: translate } = useTranslation();
+
   return (
     <div className="bg-primary-color text-[.75em]">
       <div
@@ -17,36 +20,47 @@ function Footer() {
           >
             <div className="flex flex-col text-white  mb-5 lg:mb-0">
               <h5 className="text-green-200 font-medium  mb-[7px]">
-                Termeni Legali
+                {translate("footer_section_1_title")}
               </h5>
               <p className="cursor-pointer hover:underline">
-                Termeni si Conditii
+                {translate("footer_section_1_subtitle_1")}
               </p>
-              <p className="cursor-pointer hover:underline">Regulament</p>
               <p className="cursor-pointer hover:underline">
-                Protectia Consumatorului
+                {" "}
+                {translate("footer_section_1_subtitle_2")}
+              </p>
+              <p className="cursor-pointer hover:underline">
+                {translate("footer_section_1_subtitle_3")}
               </p>
             </div>
 
             <div className="flex flex-col text-white  mb-5 lg:mb-0">
               <h5 className="text-green-200 font-medium  mb-[7px]">
-                Confidentialitate
+                {translate("footer_section_2_title")}
               </h5>
               <p className="cursor-pointer hover:underline">
-                Politica de confidentialitate
+                {translate("footer_section_2_subtitle_1")}
               </p>
               <p className="cursor-pointer hover:underline">
-                Politica privind fisierele cookie
+                {translate("footer_section_2_subtitle_2")}
               </p>
             </div>
 
             <div className="flex flex-col text-white">
-              <h5 className="text-green-200 font-medium mb-[7px]">2A Farm</h5>
+              <h5 className="text-green-200 font-medium mb-[7px]">
+                {translate("footer_section_3_title")}
+              </h5>
               <p className="cursor-pointer hover:underline">
-                Vanzari Medicamente
+                {translate("footer_section_3_subtitle_1")}
               </p>
-              <p className="cursor-pointer hover:underline">Parteneri</p>
-              <p className="cursor-pointer hover:underline">Contacteaza-ne</p>
+              <p className="cursor-pointer hover:underline">
+                {" "}
+                {translate("footer_section_3_subtitle_2")}
+              </p>
+              <p className="cursor-pointer hover:underline">
+                {" "}
+                {translate("footer_section_3_subtitle_3")}
+              </p>
             </div>
           </div>
 
@@ -77,7 +91,7 @@ function Footer() {
               src={toAbsoluteUrl("/assets/anpc/ANPC-2.png")}
               width={200}
               alt="anpc2"
-              className="mt-5"
+              className="mt-3"
             />
           </a>
         </div>
