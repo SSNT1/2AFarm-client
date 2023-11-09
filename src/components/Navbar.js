@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import SiteLang from "./SiteLang";
+import { Link as ScrollLink } from "react-scroll";
 
 const logo2A = "https://2afarm.ro/wp-content/uploads/2018/10/logo.svg";
 
@@ -22,12 +22,16 @@ function Navbar({ navbarLinks, ordersButtonText }) {
         {navbarLinks.map((link) => {
           return (
             <li key={link.name}>
-              <a
-                href={link.href}
-                className=" text-gray-400 px-3 py-5 mx-2 hover:text-primary-color ease-out duration-300"
+              <ScrollLink
+                to={link.href}
+                className="cursor-pointer text-gray-400 px-3 py-5 mx-2 hover:text-primary-color ease-out duration-300"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-55}
               >
                 {link.name}
-              </a>
+              </ScrollLink>
             </li>
           );
         })}
@@ -81,12 +85,17 @@ function Navbar({ navbarLinks, ordersButtonText }) {
               {navbarLinks.map((link) => {
                 return (
                   <li key={link.name} className="p-5 border-b border-gray-300">
-                    <a
-                      href={link.href}
+                    <ScrollLink
+                      onClick={handleShowNav}
+                      to={link.href}
                       className=" text-gray-200  hover:text-primary-color ease-out duration-300"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-55}
                     >
                       {link.name}
-                    </a>
+                    </ScrollLink>
                   </li>
                 );
               })}

@@ -13,6 +13,7 @@ import FullBgWithContentComponent from "./components/FullBgWithContentComponent"
 import ImageAndContentComponent from "./components/ImageAndContentComponent";
 import SliderComponent from "./components/SliderComponent";
 import Producers from "./components/Producers";
+import { Element } from "react-scroll";
 
 function App() {
   const { t: translate } = useTranslation();
@@ -24,55 +25,59 @@ function App() {
         navbarLinks={[
           {
             name: translate("navbar_link_1"),
-            href: "/",
+            href: "home",
           },
           {
             name: translate("navbar_link_2"),
-            href: "/",
+            href: "about",
           },
           {
             name: translate("navbar_link_3"),
-            href: "/",
+            href: "contact",
           },
         ]}
       />
       <div className="h-[55px]" />
-      <SliderComponent
-        sliderData={[
-          {
-            height: 800,
-            title: translate("hero_title_1"),
-            description: translate("hero_description_1"),
-            buttonText: translate("hero_button_1"),
-            backgroundImage:
-              "https://tt152.files.keap.app/tt152/2799b797-d1db-4128-bbc8-af43290f881c",
-          },
-          {
-            height: 800,
-            title: translate("hero_title_2"),
-            description: translate("hero_description_2"),
-            buttonText: translate("hero_button_2"),
-            backgroundImage:
-              "https://c0.wallpaperflare.com/path/896/663/732/adult-biology-chemical-chemist-7a2f2b5e6a080c94b1045e9d9ddcf101.jpg",
-          },
-          {
-            height: 800,
-            title: translate("hero_title_3"),
-            description: translate("hero_description_3"),
-            buttonText: translate("hero_button_3"),
-            backgroundImage:
-              "https://wp.inews.co.uk/wp-content/uploads/2023/01/SEI_139961276.jpg",
-          },
-        ]}
-      />
+      <Element name="home">
+        <SliderComponent
+          sliderData={[
+            {
+              height: 800,
+              title: translate("hero_title_1"),
+              description: translate("hero_description_1"),
+              buttonText: translate("hero_button_1"),
+              backgroundImage:
+                "https://tt152.files.keap.app/tt152/2799b797-d1db-4128-bbc8-af43290f881c",
+            },
+            {
+              height: 800,
+              title: translate("hero_title_2"),
+              description: translate("hero_description_2"),
+              buttonText: translate("hero_button_2"),
+              backgroundImage:
+                "https://c0.wallpaperflare.com/path/896/663/732/adult-biology-chemical-chemist-7a2f2b5e6a080c94b1045e9d9ddcf101.jpg",
+            },
+            {
+              height: 800,
+              title: translate("hero_title_3"),
+              description: translate("hero_description_3"),
+              buttonText: translate("hero_button_3"),
+              backgroundImage:
+                "https://wp.inews.co.uk/wp-content/uploads/2023/01/SEI_139961276.jpg",
+            },
+          ]}
+        />
+      </Element>
 
-      <FullBgWithContentComponent
-        wrapperClassName={"mt-20"}
-        backgroundImage="https://images.pexels.com/photos/5998512/pexels-photo-5998512.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-5998512.jpg&fm=jpg"
-        title={translate("full_bg_component_title_1")}
-        description={translate("full_bg_component_description_1")}
-        buttonText={translate("full_bg_component_button_1")}
-      />
+      <Element name="about">
+        <FullBgWithContentComponent
+          wrapperClassName={"mt-20"}
+          backgroundImage="https://images.pexels.com/photos/5998512/pexels-photo-5998512.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-5998512.jpg&fm=jpg"
+          title={translate("full_bg_component_title_1")}
+          description={translate("full_bg_component_description_1")}
+          buttonText={translate("full_bg_component_button_1")}
+        />
+      </Element>
 
       <ImageAndContentComponent
         title={translate("image_and_content_component_title_1")}
@@ -102,14 +107,16 @@ function App() {
 
       <Partners />
 
-      <HeroComponent
-        height={250}
-        title={translate("hero_title_down_section")}
-        description={translate("hero_description_down_section")}
-        buttonText={translate("hero_button_down_section")}
-        buttonVariant="secondary"
-        backgroundImage="https://papers.co/wallpaper/papers.co-nd37-leaf-rain-green-nature-forest-29-wallpaper.jpg"
-      />
+      <Element name="contact">
+        <HeroComponent
+          height={250}
+          title={translate("hero_title_down_section")}
+          description={translate("hero_description_down_section")}
+          buttonText={translate("hero_button_down_section")}
+          buttonVariant="secondary"
+          backgroundImage="https://papers.co/wallpaper/papers.co-nd37-leaf-rain-green-nature-forest-29-wallpaper.jpg"
+        />
+      </Element>
 
       <Producers />
 
