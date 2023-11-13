@@ -42,6 +42,17 @@
 
     "producers_title" : "Producatori",
 
+    "contact_section_title" : "Datele noastre de contact",
+
+    "contact_subsection_1_title":"Contact",
+    
+    "contact_subsection_2_title":"Date de identificare",
+    "contact_subsection_2_account":"Cont",
+    "contact_subsection_2_treasury_account":"Cont Trezorerie",
+
+    "contact_subsection_3_title":"Departamente",
+
+
     "footer_section_1_title" :"Termeni Legali",
     "footer_section_1_subtitle_1" : "Termeni si Conditii",
     "footer_section_1_subtitle_2" : "Regulament",

@@ -14,6 +14,7 @@ import ImageAndContentComponent from "./components/ImageAndContentComponent";
 import SliderComponent from "./components/SliderComponent";
 import Producers from "./components/Producers";
 import { Element } from "react-scroll";
+import Contact from "./components/Contact";
 
 function App() {
   const { t: translate } = useTranslation();
@@ -108,19 +109,21 @@ function App() {
 
       <Partners />
 
-      <Element name="contact">
-        <HeroComponent
-          height={250}
-          title={translate("hero_title_down_section")}
-          description={translate("hero_description_down_section")}
-          buttonText={translate("hero_button_down_section")}
-          buttonVariant="secondary"
-          backgroundImage="https://papers.co/wallpaper/papers.co-nd37-leaf-rain-green-nature-forest-29-wallpaper.jpg"
-        />
-      </Element>
+      <HeroComponent
+        wrapperClassName="my-2"
+        height={250}
+        title={translate("hero_title_down_section")}
+        description={translate("hero_description_down_section")}
+        buttonText={translate("hero_button_down_section")}
+        buttonVariant="secondary"
+        backgroundImage="https://papers.co/wallpaper/papers.co-nd37-leaf-rain-green-nature-forest-29-wallpaper.jpg"
+      />
 
       <Producers />
 
+      <Element name="contact">
+        <Contact />
+      </Element>
       <Footer />
     </div>
   );

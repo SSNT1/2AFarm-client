@@ -200,7 +200,7 @@ function Producers() {
   const { t: translate } = useTranslation();
 
   return (
-    <div className="border-y-2 my-2 border-primary-color max-w-full p-[20px] md:p-[40px] lg:py-[60px] ">
+    <div className="border-y-2 border-primary-color max-w-full p-[20px] md:p-[40px] lg:py-[60px] ">
       <h2 className="text-primary-color text-center text-xl lg:text-2xl xl:text-3xl font-bold">
         {translate("producers_title")}
       </h2>

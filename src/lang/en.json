@@ -43,6 +43,16 @@
 
     "producers_title" : "Producers",
 
+    "contact_section_title" : "Our Contact Information",
+
+    "contact_subsection_1_title":"Contact",
+    
+    "contact_subsection_2_title":"Identification Data",
+    "contact_subsection_2_account":"Account",
+    "contact_subsection_2_treasury_account":"Treasury Account",
+
+    "contact_subsection_3_title":"Departments",
+
     "footer_section_1_title" :"Legal Terms",
     "footer_section_1_subtitle_1" : "Terms and Conditions",
     "footer_section_1_subtitle_2" : "Regulations",
