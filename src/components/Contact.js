@@ -1,6 +1,7 @@
 import React from "react";
 import KTSVG from "../utils/KTSVG";
 import { useTranslation } from "react-i18next";
+import { clientConfig } from "../configs/clientConfig";
 
 function Contact({ title, email, phone, fax }) {
   const { t: translate } = useTranslation();
@@ -25,28 +26,28 @@ function Contact({ title, email, phone, fax }) {
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-envelope-o" aria-hidden="true" />
               </span>
-              office@2afarm.ro
+              {clientConfig.email}
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-phone" aria-hidden="true" />
               </span>
-              +40 351 801 444
+              {clientConfig.primaryPhoneNumber}
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-phone-square" aria-hidden="true" />
               </span>
-              +40 372 872 180
+              {clientConfig.secondaryPhoneNumber}
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-map-marker" aria-hidden="true" />
               </span>
-              Str. Aeroportului, Nr.195, Dolj, Romania 207206
+              {clientConfig.addressLocation}
             </p>
           </div>
 
@@ -55,28 +56,28 @@ function Contact({ title, email, phone, fax }) {
               {translate("contact_subsection_2_title")}
             </h3>
             <p className="text-sm xl:text-base font-medium">
-              Nr.Ord.Reg.Com.:
-              <span className="font-semibold">J16/25/2011</span>
+              Nr.Ord.Reg.Com.:{" "}
+              <span className="font-semibold">{clientConfig.orderNumber}</span>
             </p>
 
             <p className="text-sm xl:text-base font-medium">
-              CUI: <span className="font-semibold">RO27887894</span>
+              CUI: <span className="font-semibold">{clientConfig.CUI}</span>
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               {translate("contact_subsection_2_account")}:{" "}
-              <span className="font-semibold">
-                RO75 BTRL 0170 1202 3926 00XX
-              </span>
+              <span className="font-semibold">{clientConfig.bankAccount}</span>
             </p>
 
             <p className="text-sm xl:text-base font-medium">
-              Banca Transilvania - Craiova, Dolj.
+              {clientConfig.bankName}
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               {translate("contact_subsection_2_treasury_account")}:{" "}
-              <span className="font-semibold">RO16TREZ2915069XXX011364</span>
+              <span className="font-semibold">
+                {clientConfig.treasuryAccount}
+              </span>
             </p>
           </div>
 
@@ -88,28 +89,28 @@ function Contact({ title, email, phone, fax }) {
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-handshake-o" aria-hidden="true" />
               </span>
-              achizitii@2afarm.ro
+              {clientConfig.department_email_1}
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-balance-scale" aria-hidden="true" />
               </span>
-              juridic@2afarm.ro
+              {clientConfig.department_email_2}
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-credit-card-alt" aria-hidden="true" />
               </span>
-              financiar@2afarm.ro
+              {clientConfig.department_email_3}
             </p>
 
             <p className="text-sm xl:text-base font-medium">
               <span className="text-primary-color mr-2 text-[18px]">
                 <i class="fa fa-truck" aria-hidden="true" />
               </span>
-              logistic@2afarm.ro
+              {clientConfig.department_email_4}
             </p>
           </div>
         </div>
