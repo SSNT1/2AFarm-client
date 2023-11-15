@@ -6,6 +6,7 @@ function SiteLang({
   wrapperClassName,
   dropdownClassName,
   dropdownImageClassName,
+  onClickLanguage,
 }) {
   const { i18n } = useTranslation();
 
@@ -53,6 +54,7 @@ function SiteLang({
                 onClick={() => handleSelectCountry(language)}
               >
                 <img
+                  onClick={onClickLanguage}
                   src={language.country_flag}
                   alt="flag"
                   className={`w-9 h-9  px-[3px] py-[3px] hover:bg-primary-light-color rounded-full bg-center bg-cover bg-no-repeat ease-out duration-500} ${dropdownImageClassName}`}

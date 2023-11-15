@@ -76,6 +76,7 @@ function Navbar({ navbarLinks, ordersButtonText }) {
             }
           >
             <SiteLang
+              onClickLanguage={handleShowNav}
               wrapperClassName="flex justify-end p-5 border-b border-gray-300"
               dropdownClassName="flex flex-row-reverse p-5 absolute right-[50px] top-0"
               dropdownImageClassName="ml-2"
