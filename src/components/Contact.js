@@ -2,6 +2,7 @@ import React from "react";
 import KTSVG from "../utils/KTSVG";
 import { useTranslation } from "react-i18next";
 import { clientConfig } from "../configs/clientConfig";
+import GoogleMaps from "./GoogleMaps";
 
 function Contact({ title, email, phone, fax }) {
   const { t: translate } = useTranslation();
@@ -117,14 +118,11 @@ function Contact({ title, email, phone, fax }) {
       </div>
 
       <div className="max-w-7xl mx-auto mt-5">
-        <iframe
-          title="map-location"
-          className="w-full"
+        <GoogleMaps
+          height={400}
+          width={"100%"}
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.322727795014!2d23.895384976581383!3d44.30331551014094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d6f84da788b3%3A0x7967f1e59987ec23!2s2A%20FARM!5e0!3m2!1sro!2sro!4v1699870969394!5m2!1sro!2sro"
-          height="400"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          title="map-location"
         />
       </div>
     </div>
