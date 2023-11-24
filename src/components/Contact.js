@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { clientConfig } from "../configs/clientConfig";
 import GoogleMaps from "./GoogleMaps";
 
-function Contact({ title, email, phone, fax }) {
+function Contact() {
   const { t: translate } = useTranslation();
 
   return (
