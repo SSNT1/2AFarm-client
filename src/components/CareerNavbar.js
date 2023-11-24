@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import SiteLang from "./SiteLang";
-import { Link as ScrollLink } from "react-scroll";
-
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 
 const logo2A = "https://2afarm.ro/wp-content/uploads/2018/10/logo.svg";
 
-function Navbar({ navbarLinks, ordersButtonText }) {
+function CareerNavbar({ ordersButtonText }) {
   const { t: translate } = useTranslation();
 
   const [showNav, setShowNav] = useState(true);
@@ -22,29 +20,12 @@ function Navbar({ navbarLinks, ordersButtonText }) {
         <img src={logo2A} width={110} alt="2Afarm" />
       </a>
 
-      <ul className="hidden xl:flex md:flex-row md:items-center ">
-        {navbarLinks.map((link) => {
-          return (
-            <li key={link.name}>
-              <ScrollLink
-                to={link.href}
-                className="cursor-pointer text-gray-400 px-3 py-5 mx-2 hover:text-primary-color ease-out duration-300"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-55}
-              >
-                {link.name}
-              </ScrollLink>
-            </li>
-          );
-        })}
-
+      <ul className="hidden xl:flex md:flex-row ">
         <a
-          href="/career"
-          className="cursor-pointer text-secondary-color px-3 py-5 mx-2 hover:text-primary-color ease-out duration-300"
+          href="/"
+          className="cursor-pointer text-gray-400 hover:text-primary-color ease-out duration-300"
         >
-          {translate("navbar_carieer_link")}
+          {translate("navbar_link_home")}
         </a>
       </ul>
 
@@ -94,28 +75,11 @@ function Navbar({ navbarLinks, ordersButtonText }) {
             />
 
             <ul className="flex flex-col">
-              {navbarLinks.map((link) => {
-                return (
-                  <li key={link.name} className="p-5 border-b border-gray-300">
-                    <ScrollLink
-                      onClick={handleShowNav}
-                      to={link.href}
-                      className=" text-gray-200  hover:text-primary-color ease-out duration-300"
-                      spy={true}
-                      smooth={true}
-                      duration={500}
-                      offset={-55}
-                    >
-                      {link.name}
-                    </ScrollLink>
-                  </li>
-                );
-              })}
               <a
-                href="/career"
-                className="p-5 border-b border-gray-300 cursor-pointer  text-gray-200 hover:text-primary-color ease-out duration-300"
+                href="/"
+                className="p-5 border-b border-gray-300 cursor-pointer text-gray-200 hover:text-primary-color ease-out duration-300"
               >
-                {translate("navbar_carieer_link")}
+                {translate("navbar_link_home")}
               </a>
             </ul>
           </div>
@@ -125,4 +89,4 @@ function Navbar({ navbarLinks, ordersButtonText }) {
   );
 }
 
-export default Navbar;
+export default CareerNavbar;
